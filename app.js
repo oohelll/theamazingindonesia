@@ -27,17 +27,13 @@ if(windowWidth <= 992) {
 }
 
 if(windowWidth <= 576) {
-    const h1 = document.querySelector('.content-gallery h1');
-    const h2 = document.querySelector('.content-gallery h1:nth-child(2)');
-    h2.parentElement.removeChild(h2)
+        const h1 = document.querySelector('.eksplore-title');
 
-    const div = document.createElement('div');
-    div.innerHTML = `
-    <h1>Visit Indonesia</h1>
-    <h1>And Be Part</h1>
-    <h1>Of The Culture</h1>
-    `
-    h1.replaceWith(div)
+        h1.innerHTML = `
+        <h1>Visit Indonesia</h1>
+        <h1>And Be Part</h1>
+        <h1>Of The Culture</h1>
+        `
 }
 
 let slider = tns({
