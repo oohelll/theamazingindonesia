@@ -1,0 +1,1880 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.btn-customs {
+    border: 2px solid #27ABEB;
+    padding: 10px 25px;
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    font-size: 17px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    cursor: pointer;
+    color: #27ABEB;
+    transition: 0.6s;
+}
+
+.btn-customs:hover {
+    transform: translateY(-5px);
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 5px;
+}
+
+/* Bagian Nav */
+nav {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: 28px 0px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.dark-navbar {
+    transition: 0.8s;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+.logo h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    font-weight: lighter;
+    /* margin-left: 20px; */
+}
+
+.list-menu {
+    display: flex;
+}
+
+.list-menu li a {
+    color: white;
+    margin-left: 30px;
+}
+
+.burger {
+    display: none;
+}
+
+/* header */
+.jumbotron video {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.562);
+    z-index: 15;
+}
+
+.title {
+    position: relative;
+    z-index: 20;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding:20% 0;
+}
+
+.title h3 {
+    color: #27ABEB;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.title h1 {
+    font-size: 55px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    margin: 25px 0 25px 0;
+    text-transform: uppercase;
+}
+
+.title p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 0 25%;
+}
+
+.btn-header {
+    padding: 11px 28px;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.btn-header a {
+    font-size: 21px;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-header a:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transform: translateY(-3px);
+}
+
+/* Bagian Main */
+main {
+    z-index: 26;
+    position: relative;
+    margin-top: -104px;
+    background-color: white;
+}
+/* Bagian About Us */
+#aboutUs {
+    text-align: center;
+    padding: 5% 0;
+}
+
+#aboutUs h3 {
+    font-size: 35px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#aboutUs h3::after {
+    content: "";
+    border-bottom: 3px solid #27ABEB;
+    width: 6%;
+    display: block;
+    margin: 25px auto;
+}
+
+.content-title {
+    font-style: italic;
+    font-size: 22px;
+    width: 60%;
+    margin: 0 auto 5px auto;
+    color: #ababab;
+    letter-spacing: 2px;
+}
+
+.aboutContent {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutContent img { 
+    width: 25%;
+    border-radius: 5px;
+    margin-right: 5%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.item-content {
+    width: 30%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-content h1 {
+    font-size: 50px;
+    word-spacing: 1px;
+    margin-bottom: 5%;
+}
+
+.btn-about {
+    padding: 13px 30px;
+    display: inline-block;
+    width:fit-content;
+    font-size: 18px;
+    margin-top: 5%;
+    margin: 0;
+}
+
+/* Bagian Destination */
+.content-destination {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-destination img {
+    margin-left: 5%;
+    width: 25%;
+    border-radius: 5px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.item-destination {
+    width: 30%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.item-destination::-webkit-scrollbar {
+    display: none;
+}
+
+.item-destination h1:nth-child(1) {
+    margin-top: 350px;
+}
+
+.item-destination h1:nth-child(2)::after {
+    content: "";
+    border-bottom: 3px solid #27ABEB;
+    width: 70%;
+    display: block;
+    margin: 30px 0 -10px auto;
+}
+
+.item-destination h1 {
+    font-size: 50px;
+    word-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.btn-destination {
+    padding: 13px 30px;
+    display:flex;
+    align-self: flex-end;
+    width:fit-content;
+    font-size: 18px;
+    margin: 5% 0 0 0;
+}
+
+/* Bagian Eksplore */
+#Eksplore {
+    padding: 5% 0%;
+    margin-top: 5%;
+}
+
+.content-gallery h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.content-gallery h1:nth-child(2) {
+    margin: 25px 0;
+}
+
+.content-gallery h1:nth-child(2)::after {
+    content: "";
+    border-bottom: 3px solid #27ABEB;
+    width: 50%;
+    display: block;
+    margin: 25px auto;
+}
+
+
+.borobudur {
+    background-image: url(https://th.bing.com/th/id/OIP.YEZSoz9kfCP3rC9lBaCOAQHaK-?pid=ImgDet&rs=1);
+}
+
+.bali {
+    background-image: url(https://i.pinimg.com/736x/8e/3e/b1/8e3eb1726e6e13fd4291b0b4d0ff4aa4--bali-indonesia-backpacking-bali-indonesia-resorts.jpg);
+}
+
+.semeru {
+    background-image: url(https://i.pinimg.com/originals/b9/7a/ca/b97acaf6ca768e08c5ae6e67319a7faa.jpg);
+}
+
+.toba {
+    background-image: url(https://i.pinimg.com/originals/b2/17/24/b21724c5ac51d05dea93db12abb29b7b.jpg);
+}
+
+.komodo {
+    background-image: url(https://i.pinimg.com/736x/60/74/c8/6074c8c1775eacaee7a41c6002b14697--komodo-island-indonesia.jpg);
+}
+
+.prambanan {
+    background-image: url(https://th.bing.com/th/id/OIP.tTfkTmSeFTl91zmcJdQERwHaJX?pid=ImgDet&rs=1);
+}
+#slider {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.subcontainer {
+    width: 90%;
+    margin: auto;
+}
+
+.previous, .next {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.previous i, .next i {
+    font-size: 20px;
+}
+
+
+.slide-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.300) inset;
+}
+
+.slide-img:hover {
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.705) inset;
+}
+
+.slide-img a {
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.slide-img:hover a {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* Bagian Location */
+#location {
+    display: none;
+    justify-content: center;
+}
+
+.maps iframe {
+    width: 350px;
+    height: 530px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.item-location {
+    width: 33%;
+    margin-left: 5%;
+    margin-top: 50px;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.item-location::-webkit-scrollbar {
+    display: none;
+}
+
+.item-location h1 {
+    font-size: 50px;
+    word-spacing: 1px;
+}
+
+.item-location h1:nth-child(1) {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.item-location h1:nth-child(2) {
+    margin-bottom: 26px;
+}
+
+
+@media screen and (min-width: 2000px){
+    /* Bagian Nav */
+    nav {
+        padding: 55px 0;
+    }
+
+    .navbar {
+        padding: 0 150px;
+    }
+
+    .logo h1 {
+        font-size: 40px;
+    }
+
+    .list-menu li a {
+        font-size: 30px;
+    }
+
+    /* Bagian Header */
+    .title {
+        padding: 20% 0 20% 0;
+    }
+
+    .title h3 {
+        font-size: 33px;
+    }
+
+    .title h1 {
+        font-size: 75px;
+        margin: 35px 0;
+        letter-spacing: 10px;
+    }
+
+    .title p {
+        font-size: 30px;
+        letter-spacing: 1px;
+        padding: 0 24%;
+        margin: 10px 0;
+    }
+
+    .btn-header {
+        padding: 20px 35px;
+    }
+
+    .btn-header a {
+        font-size: 30px;
+    }
+
+    /* Bagian About */
+    #aboutUs h3 {
+        font-size: 50px;
+    }
+
+    #aboutUs h3::after {
+        border-bottom: 5px solid #27ABEB;
+        width: 10%;
+    }
+
+    .content-title {
+        letter-spacing: 7px;
+        font-size: 28px;
+        width: 70%;
+    }
+
+    .item-content {
+        width: 35%;
+    }
+
+    .item-content h1 {
+        font-size: 60px;
+    }
+
+    .item-content p {
+        font-size: 28px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    .btn-about {
+        font-size: 26px;
+        padding: 23px 35px;
+    }
+
+    /* Bagian Destination */
+    .item-destination {
+        height: 750px;
+        width: 35%;
+    }
+    .item-destination h1:nth-child(1) {
+        margin-top: 300px;
+    }
+
+    .item-destination h1 {
+        font-size: 60px;
+    }
+
+    .item-destination p {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .item-destination h1:nth-child(2)::after {
+        border-bottom: 5px solid #27ABEB;
+        width: 50%;
+    }
+
+    .btn-destination {
+        font-size: 26px;
+        padding: 23px 35px;
+    }
+
+    /* Bagian Eksplore */
+    .content-gallery h1 {
+        font-size: 60px;
+    }
+
+    .content-gallery h1:nth-child(2)::after {
+        border-bottom: 5px solid #27ABEB;
+        margin: 35px auto;
+    }
+
+    .controller h2 {
+        font-size: 37px;
+    }
+
+    .subcontainer {
+        width: 95%;
+    }
+
+    .slide-img {
+        width: 100%;
+        height: 470px;
+    }
+
+    .btn-customs {
+        margin-top: 70px;
+        font-size: 26px;
+        padding: 23px 35px;
+    }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 2000px) {
+    /* Bagian Nav */
+    nav {
+        padding: 45px 0;
+    }
+
+    .navbar {
+        padding: 0 130px;
+    }
+
+    .logo h1 {
+        font-size: 40px;
+    }
+
+    .list-menu li a {
+        font-size: 28px;
+    }
+
+    /* Bagian Header */
+    .title {
+        padding: 20% 0 20% 0;
+    }
+
+    .title h3 {
+        font-size: 33px;
+    }
+
+    .title h1 {
+        font-size: 75px;
+        margin: 35px 0;
+        letter-spacing: 10px;
+    }
+
+    .title p {
+        font-size: 30px;
+        letter-spacing: 1px;
+        padding: 0 24%;
+        margin: 10px 0;
+    }
+
+    .btn-header {
+        padding: 20px 35px;
+    }
+
+    .btn-header a {
+        font-size: 30px;
+    }
+
+    /* Bagian About */
+    #aboutUs h3 {
+        font-size: 50px;
+    }
+
+    #aboutUs h3::after {
+        border-bottom: 5px solid #27ABEB;
+        width: 10%;
+    }
+
+    .content-title {
+        letter-spacing: 7px;
+        font-size: 28px;
+        width: 70%;
+    }
+
+    .item-content {
+        width: 35%;
+    }
+
+    .item-content h1 {
+        font-size: 55px;
+    }
+
+    .item-content p {
+        font-size: 26px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+
+    .btn-about {
+        font-size: 23px;
+        padding: 20px 35px;
+    }
+
+    /* Bagian Destination */
+    .item-destination {
+        height: 700px;
+        width: 35%;
+    }
+    .item-destination h1:nth-child(1) {
+        margin-top: 255px;
+    }
+
+    .item-destination h1 {
+        font-size: 55px;
+    }
+
+    .item-destination p {
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+    .item-destination h1:nth-child(2)::after {
+        border-bottom: 5px solid #27ABEB;
+    }
+
+    .btn-destination {
+        font-size: 23px;
+        padding: 20px 35px;
+    }
+
+    /* Bagian Eksplore */
+    .content-gallery h1 {
+        font-size: 55px;
+    }
+
+    .controller h2 {
+        font-size: 35px;
+    }
+
+    .subcontainer {
+        width: 95%;
+    }
+
+    .slide-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .btn-customs {
+        margin-top: 20px;
+        font-size: 23px;
+        padding: 20px 35px;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1800px){
+    /* Bagian Nav */
+    nav {
+        padding: 35px 0;
+    }
+
+    .navbar {
+        padding: 0 100px;
+    }
+
+    .logo h1 {
+        font-size: 36px;
+    }
+
+    .list-menu li a {
+        font-size: 25px;
+    }
+
+    /* Bagian Header */
+    .title {
+        padding: 20% 0 20% 0;
+    }
+
+    .title h3 {
+        font-size: 30px;
+    }
+
+    .title h1 {
+        font-size: 70px;
+        margin: 35px 0;
+        letter-spacing: 10px;
+    }
+
+    .title p {
+        font-size: 25px;
+        letter-spacing: 1px;
+        padding: 0 24%;
+        margin: 10px 0;
+    }
+
+    .btn-header {
+        padding: 18px 35px;
+    }
+
+    .btn-header a {
+        font-size: 25px;
+    }
+
+    /* Bagian About */
+    #aboutUs h3 {
+        font-size: 45px;
+    }
+
+    #aboutUs h3::after {
+        border-bottom: 5px solid #27ABEB;
+        width: 10%;
+    }
+
+    .content-title {
+        letter-spacing: 4px;
+        font-size: 26px;
+        width: 65%;
+    }
+
+    .item-content {
+        width: 35%;
+    }
+
+    .item-content h1 {
+        font-size: 53px;
+    }
+
+    .item-content p {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .btn-about {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+
+    /* Bagian Destination */
+    .item-destination {
+        height: 700px;
+    }
+    .item-destination h1:nth-child(1) {
+        margin-top: 270px;
+    }
+
+    .item-destination h1 {
+        font-size: 53px;
+    }
+
+    .item-destination p {
+        font-size: 22px;
+    }
+
+    .item-destination h1:nth-child(2)::after {
+        border-bottom: 5px solid #27ABEB;
+    }
+
+    .btn-destination {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+
+    /* Bagian Eksplore */
+    .content-gallery h1 {
+        font-size: 53px;
+    }
+
+    .controller h2 {
+        font-size: 32px;
+    }
+
+    .subcontainer {
+        width: 95%;
+    }
+
+    .slide-img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .btn-customs {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}
+
+
+@media screen and (min-width: 1400px) and (max-width: 1600px){
+    /* Bagian Nav */
+    nav {
+        padding: 33px 0;
+    }
+
+    .logo h1 {
+        font-size: 33px;
+    }
+
+    .list-menu li a {
+        font-size: 20px;
+    }
+
+    /* Bagian Header */
+    .title {
+        padding: 20% 0 20% 0;
+    }
+
+    .title h3 {
+        font-size: 30px;
+    }
+
+    .title h1 {
+        font-size: 70px;
+        margin: 35px 0;
+        letter-spacing: 10px;
+    }
+
+    .title p {
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding: 0 20%;
+    }
+
+    .btn-header {
+        margin-top: 6px;
+    }
+
+    /* Bagian About Us */
+    #aboutUs h3 {
+        font-size: 40px;
+    }
+
+    #aboutUs h3::after {
+        border-bottom: 5px solid #27ABEB;
+        width: 8%;
+    }
+
+    .content-title {
+        letter-spacing: 3px;
+        font-size: 24px;
+    }
+
+    .item-content p {
+        font-size: 17px;
+    }
+
+    /* Bagian Destination */
+    .item-destination p {
+        font-size: 17px;
+    }
+
+    .item-destination h1:nth-child(2)::after {
+        border-bottom: 5px solid #27ABEB;
+    }
+
+    /* Bagian Eksplore */
+    .content-gallery h1:nth-child(2)::after {
+        content: "";
+        border-bottom: 5px solid #27ABEB;
+    }
+
+    .controller h2 {
+        font-size: 28px;
+    }
+
+    .subcontainer {
+        width: 90%;
+    }
+
+    .previous i, .next i {
+        font-size: 25px;
+    }
+
+    .slide-img {
+        width:100%;
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    /* Bagian Destination */
+    .item-destination h1 {
+        font-size: 45px;
+    }
+
+    .item-destination h1:nth-child(1) {
+        margin-top: 375px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    /* Bagian About */
+    .content-title {
+        font-size: 20px;
+    }
+
+    .item-content h1 {
+        font-size: 45px;
+    }
+
+    .item-content p {
+        font-size: 15px;
+    }
+
+    .btn-about {
+        font-size: 16px;
+        padding: 11px 22px;
+    }
+
+    /* Bagian Destination */    
+    .item-destination p {
+        font-size: 15px;
+    }
+
+    .btn-destination {
+        font-size: 16px;
+        padding: 11px 22px;
+    }
+
+    /* Bagian Eksplore */
+    .content-gallery h1:nth-child(2) {
+        margin: 25px auto 0px auto;
+    }
+
+    #slider {
+        height: 400px;
+    }
+
+    .slide-img {
+        height: 280px;
+    }
+
+    .btn-customs {
+        font-size: 16px;
+        padding: 11px 22px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    /* Bagian Nav */
+    nav {
+        padding: 22px 0px;
+    }
+    .logo h1 {
+        font-size: 26px;
+    }
+
+    .list-menu li a {
+        font-size: 15px;
+    }
+
+    /* Bagian Header */
+    .title p {
+        font-size: 18px;
+        letter-spacing: 1px;
+        padding: 0 20%;
+    }
+
+    /* Bagian About */
+    .content-title {
+        font-size: 17px;
+    }
+
+    .item-content h1 {
+        font-size: 35px;
+    }
+
+    .item-content p {
+        font-size: 13px;
+    }
+
+    .btn-about {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    /* Bagian Destination */
+    .item-destination {
+        width: 35%;
+    }
+
+    .item-destination h1 {
+        font-size: 35px;
+    }
+
+    .item-destination h1:nth-child(1) {
+        margin-top: 400px;
+        margin-bottom: 15px;
+    }
+
+    .item-destination h1:nth-child(2)::after {
+        margin: 20px 0 -30px auto;
+    }
+
+    .item-destination p {
+        font-size: 16px;
+    }
+
+    .btn-destination {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    /* Bagian Eksplore */
+    .content-gallery h1 {
+        font-size: 35px;
+    }
+
+    .content-gallery h1:nth-child(2) {
+        margin: 15px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    /* Bagian Eksplore */
+    .slide-img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* Bagian Navbar */
+    .navbar {
+        padding: 0 50px;
+    }
+
+    .logo h1 {
+        font-size: 23px;
+    }
+
+    .list-menu li a {
+        margin-left: 25px;
+    }
+
+    /* Header */
+    .jumbotron video {
+        height: 500px;
+    }
+
+    .overlay {
+        height: 500px;
+    }
+    .title {
+        padding: 20% 0 25% 0;
+    }
+
+    .title h3 {
+        font-size: 18px;
+    }
+    .title h1 {
+        font-size: 45px;
+    }
+    .title p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .btn-header {
+        padding: 9px 25px;
+    }
+
+    .btn-header a {
+        font-size: 19px;
+    }
+
+    /* Bagian About */
+    .aboutContent img { 
+        width: 215px;
+    }
+
+    .content-title {
+        font-size: 15px;
+    }
+
+    .item-content h1 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .item-content div h1:nth-child(2) {
+        margin: 10px 0 5px 0;
+    }
+
+    .item-content {
+        width: 40%;
+    }
+
+    .item-content p {
+        font-size: 12px;
+    }
+
+    .btn-about {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+
+    /* Bagian Destination */
+    .item-destination {
+        height: 380px;
+    }
+
+    .content-destination img {
+        width: 225px;
+        height: 400px;
+    }
+    .item-destination {
+        width: 40%;
+    }
+
+    .item-destination h1 {
+        font-size: 31px;
+    }
+
+    
+    .item-destination h1:nth-child(1) {
+        margin-top: 350px;
+    }
+
+    .item-destination p {
+        font-size: 12px;
+    }
+
+    .btn-destination {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+
+    /* Bagian Eksplore */
+    .content-gallery h1 {
+        font-size: 31px;
+    }
+
+    .controller h2 {
+        font-size: 20px;
+    }
+
+    .slide-img {
+        height: 240px;
+    }
+
+    .btn-customs {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /* Bagian Destination */
+    .item-destination h1:nth-child(1) {
+        margin-top: 420px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /* Bagian Navbar */
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .list-menu li a {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    /* Bagian Header */
+    .title {
+        padding: 23% 0 30% 0;
+    }
+
+    .title h3 {
+        font-size: 17px;
+    }
+    .title h1 {
+        font-size: 35px;
+        margin: 15px 0;
+    }
+    .title p {
+        font-size: 15px;
+        margin-bottom: 5px;
+        padding: 0 15%;
+    }
+
+    .btn-header {
+        padding: 5px 20px;
+    }
+
+    .btn-header a {
+        font-size: 15px;
+    }
+
+    /* Bagian About */
+    #aboutUs h3 {
+        font-size: 30px;
+    }
+
+
+    .content-title {
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .item-content h1 {
+        font-size: 28px;
+    }
+
+    .item-content div h1:nth-child(2) {
+        margin: 5px 0 0px 0;
+    }
+
+    .item-content {
+        width: 45%;
+    }
+
+    .btn-about {
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+
+    /* Bagian Destination */
+    .item-destination {
+        width: 45%;
+    }
+
+    .item-destination {
+        height: 350px;
+    }
+
+    .content-destination img {
+        width: 215px;
+        height: 350px;
+    }
+
+    .item-destination h1 {
+        font-size: 28px;
+    }
+
+    .item-destination h1:nth-child(1)  {
+        margin-top: 400px;
+        margin-bottom: 10px;
+    }
+
+
+    .item-destination h1:nth-child(2)::after {
+        margin: 15px 0 -40px auto;
+        width: 50%;
+    }
+
+
+    .btn-destination {
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+
+    /* Bagian Eksplore */
+    .content-gallery h1 {
+        font-size: 28px;
+    }
+
+    #slider {
+        height: 320px;
+    }
+
+    .container {
+        margin: 0 auto auto auto;
+    }
+
+    .previous i, .next i, .controller h2 {
+        font-size: 18px;
+    }
+
+    .slide-img {
+        height: 200px;
+    }
+
+    .btn-customs {
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .item-destination h1:nth-child(1)  {
+        margin-top: 440px;
+    }
+}
+@media screen and (max-width: 650px){
+    /* Bagian Navbar */
+    .menu {
+        position: fixed;
+        top: 68px;
+        right: 0;
+        height: 90%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        transform: translateX(100%);
+        transition: 0.5s;
+        background-color: rgba(0, 0, 0, 0.719);
+    }
+
+    .list-menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 80%;
+    }
+
+    .list-menu li a {
+        font-size: 17px;
+    }
+
+    .menu-click {
+        transform: translate(0);
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
+        margin-bottom: 5px;
+        background-color: white;
+    }
+
+    /* Bagian Header */
+    .title {
+        padding: 25% 0 35% 0;
+    }
+    .title h3 {
+        font-size: 16px;
+    }
+
+    .title h1 {
+        margin: 10px 0;
+    }
+
+    .title p {
+        font-size: 13px;
+        padding: 0 10%;
+    }
+
+    /* Bagian Destination */
+    .item-destination {
+        height: 340px;
+    }
+
+    .content-destination img {
+        width: 205px;
+        height: 340px;
+    }
+    .item-destination h1:nth-child(1) {
+        margin-top: 520px;
+    }
+
+    .item-destination p {
+        font-size: 12px;
+    }
+
+    /* Bagian Eksplore */
+    #slider {
+        height: 350px;
+    }
+
+    .slide-img {
+        height: 230px;
+    }
+}
+
+/* Untuk Smartphone */
+@media screen and (max-width: 576px){
+    /* Bagian Navbar */
+    nav {
+        padding: 18px 0px;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .menu {
+        top: 60px;
+    }
+
+    /* Bagian Header */
+    .jumbotron {
+        height: 580px;
+    }
+
+    .title {
+        padding: 0% 0 0 0;
+        align-items: center;
+        justify-content: center;
+        height: 510px;
+    }
+
+    .title h1 {
+        font-size: 35px;
+        margin: 10px 0;
+    }
+
+    .title p {
+        font-size: 11px;
+        padding: 0 4%;
+    }
+
+    .btn-header {
+        padding: 3px 16px;
+    }
+    
+    .btn-header a {
+        font-size: 14px;
+    }
+
+    /* Bagian About */
+    #aboutUs h3 {
+        font-size: 30px;
+    }
+
+    #aboutUs h3::after {
+        content: "";
+        border-bottom: 3px solid #27ABEB;
+        width: 10%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .content-title {
+        font-size: 16px;
+        width: 85%;
+    }
+
+    .aboutContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutContent img { 
+        width: 300px;
+        margin: 20px auto 0 auto;
+    }
+
+    .item-content {
+        width: auto;
+        padding: 0 50px;
+        margin-top: 40px;
+        text-align: justify;
+        align-items: center;
+    }
+    
+    .item-content h1 {
+        font-size: 35px;
+    }
+
+    .item-content div h1:nth-child(2) {
+        margin: 15px 0 15px 0;
+    }
+
+    .item-content p {
+        font-size: 16px;
+        width: 75%;
+        margin-bottom: 15px;
+    }
+
+    .btn-about {
+        font-size: 17px;
+        padding: 8px 20px;
+        width: 65%;
+        text-align: center;
+    }
+
+    /* Bagian Destination */
+    .content-destination img {
+        width: 300px;
+        height: auto;
+        margin: 20px auto 0 auto;
+    }
+    .content-destination {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .item-destination {
+        width: auto;
+        margin-top: 30px;
+        text-align: justify;
+        align-items: center;
+        height: 500px;
+    }
+
+    .item-destination h1 {
+        font-size: 40px;
+    }
+
+    .item-destination h1:nth-child(1) {
+        margin-top: 480px;
+        margin-bottom: 20px;
+    }
+
+    .item-destination h1:nth-child(2)::after {
+        width: 100%;
+        margin: 30px auto -30px auto;
+    }
+
+    .item-destination p {
+        font-size: 16px;
+        width: 310px;
+    }
+
+    .btn-destination {
+        font-size: 17px;
+        padding: 8px 20px;
+        align-self: auto;
+        width: 270px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    /* Bagian Eksplore */
+    .content-gallery h1 {
+        font-size: 45px;
+        width: auto;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .content-gallery h1:nth-child(2) {
+        margin: 0px auto;
+    }
+
+    .content-gallery h1:nth-child(2)::after {
+        content: "";
+        border-bottom: none;
+        width: 50%;
+        display: none;
+        margin: 25px auto;
+    }
+
+    .content-gallery h1:nth-child(3)::after {
+        content: "";
+        border-bottom: 3px solid #27ABEB;
+        width: 50%;
+        display: block;
+        margin: 30px auto;
+    }
+
+    #slider {
+        height: 550px;
+    }
+    .subcontainer {
+        width: 70%;
+    }
+
+    .controller h2 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .controller {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    #controls {
+        margin: 20px 0 0 0;
+    }
+
+    .previous i, .next i {
+        font-size: 25px;
+    }
+
+    .slide-img {
+        height: 450px
+    }
+
+    .btn-visit {
+        font-size: 17px;
+        padding: 8px 20px;
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    /* Bagian Navbar */
+    .logo h1 {
+        font-size: 22px;
+    }
+    .menu {
+        top: 59px;
+        width: 40%;
+    }
+
+    .line {
+        width: 23px;
+        height: 3px;
+        margin-bottom: 5px;
+    }
+
+    .list-menu li a {
+        font-size: 15px;
+    }
+
+    /* Bagian Header */
+    .title p {
+        font-size: 10px;
+        padding: 0 10%;
+    }
+
+    /* Bagian About */
+    #aboutUs h3 {
+        font-size: 25px;
+    }
+
+    .content-title {
+        font-size: 13px;
+    }
+
+    .aboutContent img { 
+        height: 410px;
+    }
+
+    .item-content {
+        padding: 0 10px;
+    }
+
+    /* Bagian Destination */
+    .content-destination img {
+        height: 410px;
+    }
+
+    /* Bagian Eksplore */
+    .content-gallery h1 {
+        font-size: 40px;
+    }
+
+    .subcontainer {
+        width: 80%;
+    }
+
+    .btn-visit {
+        width:330px;
+    }
+}
+
+/* Layar Untuk hp seperti redmi note 8 390px - 400px*/
+@media screen and (max-width: 400px){
+    /* Bagian Navbar */
+    .menu {
+        height: 91%;
+        width: 35%;
+    }
+
+    .list-menu {
+        justify-content: space-evenly;
+    }
+
+    /* Bagian About */
+    .aboutContent img { 
+        width: 270px;
+        height: 390px;
+    }
+
+    .item-content h1 {
+        font-size: 30px;
+    }
+
+    .item-content div h1:nth-child(2) {
+        margin: 15px 0 5px 0;
+    }
+
+    .item-content {
+        padding: 0 0px;
+    }
+
+    .item-content p {
+        font-size: 14px;
+        width: 70%;
+        margin-bottom: 5px;
+    }
+
+    .btn-about {
+        font-size: 15px;
+        padding: 6px 0px;
+        width: 70%;
+    }
+
+    /* Bagian Destination */
+    .content-destination img {
+        width: 270px;
+        height: 390px;
+    }
+
+    .item-destination {
+        margin-top: 0px;
+        height: 700px;
+    }
+
+
+    .item-destination h1:nth-child(1) {
+        margin-top: 380px;
+    }
+
+    .item-destination h1 {
+        font-size: 35px;
+    }
+
+    .item-destination p {
+        font-size: 14px;
+        width: 270px;
+    }
+
+    .btn-destination {
+        font-size: 15px;
+        padding: 6px 0px;
+        width: 270px;
+    }
+
+    /* Bagian Eksplore */
+    .content-gallery h1 {
+        font-size: 35px;
+    }
+
+    #slider {
+        height: 500px;
+    }
+
+    .controller h2 {
+        font-size: 22px;
+    }
+    .previous i, .next i {
+        font-size: 22px;
+    }
+
+    .slide-img {
+        height: 400px
+    }
+
+    .btn-visit {
+        font-size: 15px;
+        padding: 6px 0px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    /* Bagian  Navbar*/
+    .menu {
+        height: 92%;
+    }
+
+    .list-menu {
+        justify-content:center;
+    }
+
+    .list-menu li {
+        margin-bottom: 50px;
+    }
+
+    /* Bagian About */
+    .item-content div h1:nth-child(2) {
+        margin: 10px 0 10px 0;
+    }
+
+    .item-content p {
+        width: 270px;
+    }
+
+    .btn-about {
+        width: 270px;
+    }
+
+    /* Bagian Destination */
+    .content-destination img {
+        width: 270px;
+        height: 370px;
+    }
+
+    /* Bagian Eksplore */
+    #slider {
+        height: 450px;
+    }
+
+    .subcontainer {
+        width: 85%;
+    }
+
+    .controller h2 {
+        font-size: 22px;
+    }
+    .previous i, .next i {
+        font-size: 22px;
+    }
+
+    .slide-img {
+        height: 350px
+    }
+}
+
+@media screen and (max-width: 300px){
+    /* Bagian About */
+    .aboutContent img { 
+        width: 230px;
+        height: 350px;
+    }
+
+    .item-content p {
+        width: 230px;
+        font-size: 13px;
+    }
+
+    .btn-about {
+        font-size: 14px;
+        width: 230px;
+    }
+
+    /* Bagian Destination */
+    .content-destination img {
+        width: 230px;
+        height: 350px;
+    }
+
+    .item-destination h1 {
+        font-size: 30px;
+    }
+
+    .item-destination h1:nth-child(1) {
+        margin-top: 500px;
+        margin-bottom: 15px;
+    }
+
+    .item-destination h1:nth-child(2)::after {
+        margin: 20px auto -30px auto;
+    }
+
+    .item-destination p {
+        font-size: 13px;
+        width: 230px;
+    }
+
+    .btn-destination {
+        font-size: 14px;
+        width: 230px;
+    }
+}
