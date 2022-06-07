@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 
 * {
     line-height: 20px;
@@ -6,19 +7,24 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'Alegreya', serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .btn-customs {
     border: 2px solid #27ABEB;
-    padding: 10px 25px;
+    color: #27ABEB;
     background-color: white;
-    border-radius: 5px;
     display: block;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 5px;
     margin: 0 auto;
     font-size: 17px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    cursor: pointer;
-    color: #27ABEB;
     transition: 0.6s;
 }
 
@@ -64,6 +70,7 @@ nav {
 .list-menu li a {
     color: white;
     margin-left: 30px;
+    font-family: 'Alegreya', serif;
 }
 
 .burger {
@@ -94,6 +101,8 @@ nav {
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding:20% 0;
 }
 
@@ -104,10 +113,10 @@ nav {
 }
 
 .title h1 {
-    font-size: 55px;
+    font-size: 100px;
     letter-spacing: 5px;
     font-weight: bolder;
-    margin: 25px 0 25px 0;
+    margin: 45px auto 45px auto;
     text-transform: uppercase;
 }
 
@@ -415,6 +424,82 @@ main {
     margin-bottom: 26px;
 }
 
+/* Bagian Footer */
+footer {
+    padding: 5% 0 0 0;
+}
+
+
+.footer-head {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 5% 0;
+}
+
+.footer-head a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.footer-head i {
+    font-size: 20px;
+    border: 3px solid black;
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin: 0 25px;
+    background-color: white;
+}
+
+.footer-body {
+    background-color: rgba(0, 0, 0);
+    width: 100%;
+    color: white;
+}
+
+.footer-items {
+    display: flex;
+    padding: 5% 6%;
+    justify-content: space-evenly;
+}
+
+.footer-items p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.footer-items ul li {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.itemFour input, .itemFour button {
+    padding: 8px 15px;
+    font-size: 15px;
+}
+
+.itemFour button {
+    border: 2px solid #27ABEB;
+    color: #27ABEB;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.itemFour button:hover {
+    background-color: black;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 1% 0;
+    background-color: #27ABEB;
+}
 
 @media screen and (min-width: 2000px){
     /* Bagian Nav */
@@ -444,8 +529,8 @@ main {
     }
 
     .title h1 {
-        font-size: 75px;
-        margin: 35px 0;
+        font-size: 135px;
+        margin: 70px auto 0px auto;
         letter-spacing: 10px;
     }
 
@@ -522,6 +607,10 @@ main {
         width: 50%;
     }
 
+    .item-img img {
+        height: 750px;
+    }
+
     .btn-destination {
         font-size: 26px;
         padding: 23px 35px;
@@ -555,6 +644,36 @@ main {
         font-size: 26px;
         padding: 23px 35px;
     }
+
+    /* Bagian Footer */
+    .footer-head i {
+        font-size: 32px;
+        padding: 10px 14px;
+        border-radius: 35px;
+    }
+
+    .footer-items p {
+        font-size: 25px;
+    }
+
+    .footer-items ul li {
+        font-size: 22px;
+    }
+
+    .itemFour input {
+        padding: 10px 15px;
+        font-size: 22px;
+    }
+
+    .itemFour button {
+        padding: 14px 15px;
+        font-size: 22px;
+    }
+
+    .copyright {
+        padding: 2% 0;
+        font-size: 22px;
+    }
 }
 
 @media screen and (min-width: 1800px) and (max-width: 2000px) {
@@ -585,11 +704,10 @@ main {
     }
 
     .title h1 {
-        font-size: 75px;
-        margin: 35px 0;
+        font-size: 125px;
+        margin: 60px auto 40px auto;
         letter-spacing: 10px;
     }
-
     .title p {
         font-size: 30px;
         letter-spacing: 1px;
@@ -662,6 +780,10 @@ main {
         border-bottom: 5px solid #27ABEB;
     }
 
+    .item-img img {
+        height: 700px;
+    }
+
     .btn-destination {
         font-size: 23px;
         padding: 20px 35px;
@@ -689,6 +811,36 @@ main {
         margin-top: 20px;
         font-size: 23px;
         padding: 20px 35px;
+    }
+
+    /* Bagian Footer */
+    .footer-head i {
+        font-size: 30px;
+        padding: 10px 14px;
+        border-radius: 35px;
+    }
+
+    .footer-items p {
+        font-size: 23px;
+    }
+
+    .footer-items ul li {
+        font-size: 20px;
+    }
+
+    .itemFour input {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    .itemFour button {
+        padding: 14px 15px;
+        font-size: 20px;
+    }
+
+    .copyright {
+        padding: 2% 0;
+        font-size: 20px;
     }
 }
 
@@ -720,8 +872,8 @@ main {
     }
 
     .title h1 {
-        font-size: 70px;
-        margin: 35px 0;
+        font-size: 110px;
+        margin: 55px auto;
         letter-spacing: 10px;
     }
 
@@ -822,6 +974,36 @@ main {
         font-size: 20px;
         padding: 15px 30px;
     }
+
+    /* Bagian Footer */
+    .footer-head i {
+        font-size: 30px;
+        padding: 8px 12px;
+        border-radius: 35px;
+    }
+
+    .footer-items p {
+        font-size: 23px;
+    }
+
+    .footer-items ul li {
+        font-size: 20px;
+    }
+
+    .itemFour input {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    .itemFour button {
+        padding: 14px 15px;
+        font-size: 20px;
+    }
+
+    .copyright {
+        padding: 2% 0;
+        font-size: 20px;
+    }
 }
 
 
@@ -842,6 +1024,7 @@ main {
     /* Bagian Header */
     .title {
         padding: 20% 0 20% 0;
+        
     }
 
     .title h3 {
@@ -849,8 +1032,6 @@ main {
     }
 
     .title h1 {
-        font-size: 70px;
-        margin: 35px 0;
         letter-spacing: 10px;
     }
 
@@ -862,6 +1043,7 @@ main {
 
     .btn-header {
         margin-top: 6px;
+        padding: 13px 30px;
     }
 
     /* Bagian About Us */
@@ -933,6 +1115,11 @@ main {
 }
 
 @media screen and (max-width: 1300px) {
+    /* Header */
+    .title h1 {
+        font-size: 80px;
+    }
+
     /* Bagian About */
     .content-title {
         font-size: 20px;
@@ -978,9 +1165,32 @@ main {
         font-size: 16px;
         padding: 11px 22px;
     }
+
+    /* Bagian Footer */
+    .footer-items p {
+        font-size: 18px;
+    }
+
+    .footer-items ul li {
+        font-size: 16px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 1200px){
+    /* Bagian Header */
+    .title h1 {
+        font-size: 70px;
+        margin: 35px auto 35px auto;
+    }
+
+    .btn-header {
+        padding: 10px 27px;
+    }
+
     /* Bagian Nav */
     nav {
         padding: 22px 0px;
@@ -1048,6 +1258,23 @@ main {
     .content-gallery h1:nth-child(2) {
         margin: 15px 0 0 0;
     }
+
+    /* Bagian Footer */
+    .footer-items p {
+        font-size: 16px;
+    }
+
+    .footer-items ul li {
+        font-size: 14px;
+    }
+
+    .itemFour input, .itemFour button {
+        padding: 7px 13px;
+    }
+
+    .copyright {
+        font-size: 11px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1095,7 +1322,7 @@ main {
         font-size: 18px;
     }
     .title h1 {
-        font-size: 45px;
+        font-size: 60px;
     }
     .title p {
         font-size: 16px;
@@ -1190,6 +1417,25 @@ main {
         font-size: 15px;
         padding: 8px 18px;
     }
+
+    /* Bagian Footer */
+    .footer-head i {
+        font-size: 19px;
+        border: 2px solid black;
+        padding: 5px 10px;
+    }
+
+    .footer-items p {
+        font-size: 14px;
+    }
+
+    .footer-items ul li {
+        font-size: 14px;
+    }
+
+    .itemFour input, .itemFour button {
+        padding: 4px 11px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -1224,8 +1470,8 @@ main {
         font-size: 17px;
     }
     .title h1 {
-        font-size: 35px;
-        margin: 15px 0;
+        font-size: 50px;
+        margin: 30px auto;
     }
     .title p {
         font-size: 15px;
@@ -1395,7 +1641,7 @@ main {
     }
 
     .title h1 {
-        margin: 10px 0;
+        font-size: 50px;
     }
 
     .title p {
@@ -1432,6 +1678,29 @@ main {
     .slide-img a {
         font-size: 1.4rem;
     }
+
+    /* Bagian Footer */
+    .footer-head i {
+        font-size: 19px;
+        padding: 5px 10px;
+        margin: 0 20px;
+    }
+
+    .footer-items p {
+        font-size: 13px;
+    }
+
+    .footer-items ul li {
+        font-size: 13px;
+    }
+
+    .itemFour input, .itemFour button {
+        padding: 3px 7px;
+    }
+
+    .copyright {
+        font-size: 11px;
+    }
 }
 
 /* Untuk Smartphone */
@@ -1461,22 +1730,21 @@ main {
         height: 510px;
     }
 
-    .title h1 {
-        font-size: 35px;
-        margin: 10px 0;
+    .title h3 {
+        font-size: 18px;
     }
 
-    .title p {
-        font-size: 11px;
-        padding: 0 4%;
+    .title h1 {
+        font-size: 65px;
+        margin: 30px 0;
     }
 
     .btn-header {
-        padding: 3px 16px;
+        padding: 7px 20px;
     }
     
     .btn-header a {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     /* Bagian About */
@@ -1651,6 +1919,46 @@ main {
         padding: 8px 20px;
         width: 270px;
     }
+
+    /* Bagian Footer */
+    .footer-head {
+        margin: 40px 0;
+    }
+    .footer-head i {
+        padding: 5px 10px;
+        border-radius: 25px;
+        margin: 0 20px;
+    }
+
+    .footer-items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-items p {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .footer-items ul li {
+        font-size: 15px;
+    }
+
+    .itemOne, .itemTwo, .itemThree, .itemFour {
+        margin: 15px 0 ;
+    }
+
+    .itemFour input, .itemFour button {
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        padding: 2% 0;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -1674,9 +1982,9 @@ main {
     }
 
     /* Bagian Header */
-    .title p {
-        font-size: 10px;
-        padding: 0 10%;
+    .title h1 {
+        font-size: 50px;
+        margin: 25px 0;
     }
 
     /* Bagian About */
@@ -1712,6 +2020,11 @@ main {
 
     .btn-visit {
         width:330px;
+    }
+
+    /* Bagian Footer */
+    .footer-head i {
+        margin: 0 10px;
     }
 }
 
@@ -1813,6 +2126,15 @@ main {
         padding: 6px 0px;
         width: 80%;
     }
+
+    /* Bagian Footer */
+    .itemOne, .itemTwo, .itemThree, .itemFour {
+        margin: 25px 0 10px 0;
+    }
+
+    .copyright {
+        padding: 5% 0;
+    }
 }
 
 @media screen and (max-width: 350px){
@@ -1827,6 +2149,12 @@ main {
 
     .list-menu li {
         margin-bottom: 50px;
+    }
+
+    /* Bagian Header */
+    .title h1 {
+        font-size: 40px;
+        margin: 15px 0;
     }
 
     /* Bagian About */
@@ -1867,9 +2195,35 @@ main {
     .slide-img {
         height: 350px
     }
+
+    /* Bagian Footer */
+    .footer-head i {
+        margin: 0 5px;
+        padding: 3px 8px;
+        border-radius: 25px;
+    }
+
+    .footer-items p {
+        font-size: 18px;
+    }
+
+    .itemFour input, .itemFour button {
+        padding: 6px 8px;
+        font-size: 15px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 300px){
+    /* Bagian Header */
+    .title h1 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    
     /* Bagian About */
     .aboutContent img { 
         width: 230px;
@@ -1913,5 +2267,24 @@ main {
     .btn-destination {
         font-size: 14px;
         width: 230px;
+    }
+
+    /* Bagian Footer */
+    .footer-items p {
+        font-size: 16px;
+    }
+
+    .itemFour input, .itemFour button {
+        padding: 4px 6px;
+        font-size: 14px;
+    }
+
+    .itemFour button {
+        margin-top: 5px;
+        width: 80%;
+    }
+
+    .copyright {
+        font-size: 10px;
     }
 }
