@@ -1596,7 +1596,7 @@ footer {
         position: fixed;
         top: 68px;
         right: 0;
-        height: 90%;
+        height: 100%;
         width: 50%;
         display: flex;
         align-items: center;
@@ -1720,7 +1720,7 @@ footer {
 
     /* Bagian Header */
     .jumbotron {
-        height: 580px;
+        height: 800px;
     }
 
     .title {
@@ -2279,9 +2279,13 @@ footer {
         font-size: 14px;
     }
 
+    .itemFour input {
+        width: 80%;
+    }
+
     .itemFour button {
         margin-top: 5px;
-        width: 80%;
+        width: 86%;
     }
 
     .copyright {
